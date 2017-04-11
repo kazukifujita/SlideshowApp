@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="wHc-UT-eS2">
             <objects>
-                <viewController id="1py-il-Ec5" sceneMemberID="viewController">
+                <viewController id="1py-il-Ec5" customClass="ResultViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uww-VT-zWF"/>
                         <viewControllerLayoutGuide type="bottom" id="U4v-0d-9hY"/>
@@ -62,12 +62,16 @@
                                 <rect key="frame" x="172" y="551" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="evu-xl-KU2" kind="unwind" unwindAction="unwindWithSegue:" id="z8A-c0-ixA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txt-ME-lD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="evu-xl-KU2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="817" y="124"/>
         </scene>
