@@ -12,6 +12,7 @@
 		A321976F1E9D83CC0099DDFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A321976D1E9D83CC0099DDFF /* Main.storyboard */; };
 		A32197711E9D83CC0099DDFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32197701E9D83CC0099DDFF /* Assets.xcassets */; };
 		A32197741E9D83CC0099DDFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32197721E9D83CC0099DDFF /* LaunchScreen.storyboard */; };
+		A321977C1E9D83FA0099DDFF /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A321977B1E9D83FA0099DDFF /* 01.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A32197701E9D83CC0099DDFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32197731E9D83CC0099DDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A32197751E9D83CC0099DDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A321977B1E9D83FA0099DDFF /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				A32197691E9D83CC0099DDFF /* AppDelegate.swift */,
 				A321976B1E9D83CC0099DDFF /* ViewController.swift */,
 				A321976D1E9D83CC0099DDFF /* Main.storyboard */,
+				A321977B1E9D83FA0099DDFF /* 01.jpg */,
 				A32197701E9D83CC0099DDFF /* Assets.xcassets */,
 				A32197721E9D83CC0099DDFF /* LaunchScreen.storyboard */,
 				A32197751E9D83CC0099DDFF /* Info.plist */,
@@ -126,6 +129,7 @@
 			files = (
 				A32197741E9D83CC0099DDFF /* LaunchScreen.storyboard in Resources */,
 				A32197711E9D83CC0099DDFF /* Assets.xcassets in Resources */,
+				A321977C1E9D83FA0099DDFF /* 01.jpg in Resources */,
 				A321976F1E9D83CC0099DDFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

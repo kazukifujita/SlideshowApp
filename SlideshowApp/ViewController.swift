@@ -10,8 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBAction func onTspImage(_ sender: Any) {
+        performSegue(withIdentifier: "result", sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    imageView.image = UIImage(named:"01.jpg")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
