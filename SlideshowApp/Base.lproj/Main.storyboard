@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vja-Bp-3o6">
-                                <rect key="frame" x="67" y="83" width="240" height="219"/>
+                                <rect key="frame" x="96" y="184" width="183" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -66,14 +66,21 @@
                                     <segue destination="evu-xl-KU2" kind="unwind" unwindAction="unwindWithSegue:" id="z8A-c0-ixA"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VbU-qi-YmO">
+                                <rect key="frame" x="36" y="98" width="303" height="364"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="VbU-qi-YmO" id="Lgk-ZB-oYY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txt-ME-lD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="evu-xl-KU2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="817" y="124"/>
+            <point key="canvasLocation" x="815" y="137"/>
         </scene>
     </scenes>
 </document>
