@@ -12,9 +12,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBAction func onNext(_ sender: Any) {
+    }
+    @IBAction func onPrev(_ sender: Any) {
+    }
+    
     @IBAction func onTspImage(_ sender: Any) {
         performSegue(withIdentifier: "result", sender: nil)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
