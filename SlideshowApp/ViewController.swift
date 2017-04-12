@@ -39,7 +39,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    imageView.image = UIImage(named:"01.jpg")
+    let image = UIImage(named:"01.jpg")
+        imageView.image = image
         // Do any additional setup after loading the view, typically from a nib.
     }
 
