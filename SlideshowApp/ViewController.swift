@@ -25,6 +25,12 @@ class ViewController: UIViewController {
     func displayImage() {
         
         let imageNameArray = ["01.jpg","02.jpg","03.jpg",]
+         if dispImageNo < 0 {
+            dispImageNo = 2
+        }
+        if dispImageNo > 2 {
+            dispImageNo = 0
+        }
     
         let name = imageNameArray[dispImageNo]
     
