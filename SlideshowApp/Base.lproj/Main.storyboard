@@ -30,15 +30,23 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1j1-PS-xPa">
-                                <rect key="frame" x="248" y="356" width="31" height="30"/>
+                                <rect key="frame" x="293" y="411" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="onNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hts-Tu-a7X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMH-hL-lF8">
+                                <rect key="frame" x="154" y="411" width="67" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="再生/停止"/>
+                                <connections>
+                                    <action selector="onPlayPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="guX-bb-Wjr"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIf-y1-5bV">
-                                <rect key="frame" x="96" y="356" width="31" height="30"/>
+                                <rect key="frame" x="52" y="411" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -50,6 +58,9 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="vja-Bp-3o6" id="dRo-VH-fcO"/>
+                        <outlet property="onNext" destination="1j1-PS-xPa" id="P8T-iZ-ulv"/>
+                        <outlet property="onPlayPause" destination="sMH-hL-lF8" id="ows-3f-ynJ"/>
+                        <outlet property="onPrev" destination="NIf-y1-5bV" id="Qu8-4g-Ojz"/>
                         <segue destination="1py-il-Ec5" kind="show" identifier="result" id="L1Q-8Q-0Ax"/>
                     </connections>
                 </viewController>

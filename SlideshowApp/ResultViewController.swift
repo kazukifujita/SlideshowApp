@@ -11,10 +11,13 @@ import UIKit
 class ResultViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+     var string = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-           imageView.image = UIImage(named:"01.jpg")
+         let image = UIImage(named: string)
+        imageView.image = image
         // Do any additional setup after loading the view.
     }
 
