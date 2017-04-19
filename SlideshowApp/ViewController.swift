@@ -56,10 +56,24 @@ class ViewController: UIViewController {
         let image = UIImage(named: name)
         imageView.image = image
     }
+    
+
+    
+    
+    
     @IBAction func onTspImage(_ sender: Any) {
-        performSegue(withIdentifier: "result", sender: nil)
         
+          performSegue(withIdentifier: "result", sender: nil)
+        timer?.invalidate()
+        timer = nil
         
+        onNext.setTitleColor(UIColor.blue, for: .normal)
+        onNext.isEnabled = true
+        onPrev.setTitleColor(UIColor.blue, for: .normal)
+        onPrev.isEnabled = true
+        
+             onPlayPause.setTitle("再生", for: UIControlState.normal)
+       
     }
     
       @IBOutlet weak var onPlayPause: UIButton!
@@ -67,6 +81,8 @@ class ViewController: UIViewController {
     
       @IBAction func onPlayPause(_ sender: Any) {
         if self.timer != nil{
+            
+            
             
             onNext.setTitleColor(UIColor.blue, for: .normal)
              onNext.isEnabled = true
@@ -84,7 +100,10 @@ class ViewController: UIViewController {
               onNext.setTitleColor(UIColor.lightGray, for: .normal)
               onPrev.isEnabled = false
               onPrev.setTitleColor(UIColor.lightGray, for: .normal)
+      
+            
         }
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
              let resultViewController:ResultViewController = segue.destination as! ResultViewController
@@ -96,8 +115,11 @@ class ViewController: UIViewController {
     }
     
     
+@IBAction func unwind(segue: UIStoryboardSegue) {
     
- @IBAction func unwind(segue: UIStoryboardSegue) {
+
+
+
 
 }
 
