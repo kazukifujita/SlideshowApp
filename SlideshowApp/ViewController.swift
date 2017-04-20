@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         onPrev.setTitleColor(UIColor.blue, for: .normal)
         onPrev.isEnabled = true
         
-             onPlayPause.setTitle("再生", for: UIControlState.normal)
+             onPlayPause.setTitle("再生/停止", for: UIControlState.normal)
        
     }
     
